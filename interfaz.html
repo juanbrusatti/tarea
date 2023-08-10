@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="interfaz.css">
+  <title>Sistema de Tareas</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Sistema de Tareas</h1>
+    <button id="addTaskButton">Agregar Tareas</button>
+    <ul id="taskList">
+      <!-- Aquí se añadirán las tareas -->
+    </ul>
+  </div>
+  <div class="modal" id="taskModal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Agregar Tarea</h2>
+      <form id="taskForm">
+        <label for="taskCount">Cantidad de Tareas:</label>
+        <input type="number" id="taskCount" min="1" required>
+        <label for="dueDate">Fecha de Expiración:</label>
+        <input type="date" id="dueDate">
+        <button type="submit">Agregar</button>
+      </form>
+    </div>
+  </div>
+  <script src="interfaz.js"></script>
+</body>
+</html>
